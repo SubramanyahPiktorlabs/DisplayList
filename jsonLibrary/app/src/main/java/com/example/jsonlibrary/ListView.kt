@@ -13,9 +13,9 @@ import okhttp3.*
 import org.w3c.dom.Text
 import java.io.IOException
 
-class MainActivity : AppCompatActivity() {
+class ListDisplay : AppCompatActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+     fun displayList(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
@@ -53,5 +53,7 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
-//class HomeFeed(val hobbies: List<Hobby>)
-//class Hobby (val hobby: String)
+class HomeFeed(val hobbies: List<Hobby>)
+class Hobby (val hobby: String)
+
+
