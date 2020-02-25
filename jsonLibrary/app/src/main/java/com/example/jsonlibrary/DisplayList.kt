@@ -15,7 +15,7 @@ import java.io.IOException
 
 class DisplayList : AppCompatActivity() {
 
-    public fun listDisplay(savedInstanceState: Bundle?) {
+    override public fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
