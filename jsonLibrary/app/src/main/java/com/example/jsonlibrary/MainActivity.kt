@@ -15,7 +15,7 @@ import java.io.IOException
 
 class MainActivity : AppCompatActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override public fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
@@ -48,5 +48,5 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
-//class HomeFeed(val hobbies: List<Hobby>)
-//class Hobby (val hobby: String)
+class HomeFeed(val hobbies: List<Hobby>)
+class Hobby (val hobby: String)

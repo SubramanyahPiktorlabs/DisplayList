@@ -48,5 +48,5 @@ class DisplayList : AppCompatActivity() {
     }
 }
 
-class HomeFeed(val hobbies: List<Hobby>)
-class Hobby (val hobby: String)
+//class HomeFeed(val hobbies: List<Hobby>)
+//class Hobby (val hobby: String)
