@@ -26,7 +26,7 @@
       </configuration>
     </facet>
     <facet type="kotlin-language" name="Kotlin">
-      <configuration version="3" platform="JVM 1.6" allPlatforms="JVM [1.6]" useProjectSettings="false" pureKotlinSourceFolders="E:\LibraryPOCProjects\jsonLibrary\app\src\debug\kotlin;E:\LibraryPOCProjects\jsonLibrary\app\src\debug\java;E:\LibraryPOCProjects\jsonLibrary\app\src\release\kotlin;E:\LibraryPOCProjects\jsonLibrary\app\src\release\java;E:\LibraryPOCProjects\jsonLibrary\app\src\debugAndroidTest\kotlin;E:\LibraryPOCProjects\jsonLibrary\app\src\debugUnitTest\kotlin;E:\LibraryPOCProjects\jsonLibrary\app\src\releaseUnitTest\kotlin">
+      <configuration version="3" platform="JVM 1.6" allPlatforms="JVM [1.6]" useProjectSettings="false" pureKotlinSourceFolders="E:\LibraryPOCProjects\appLibrary\jsonLibrary\app\src\debug\kotlin;E:\LibraryPOCProjects\appLibrary\jsonLibrary\app\src\debug\java;E:\LibraryPOCProjects\appLibrary\jsonLibrary\app\src\release\kotlin;E:\LibraryPOCProjects\appLibrary\jsonLibrary\app\src\release\java;E:\LibraryPOCProjects\appLibrary\jsonLibrary\app\src\debugAndroidTest\kotlin;E:\LibraryPOCProjects\appLibrary\jsonLibrary\app\src\debugUnitTest\kotlin;E:\LibraryPOCProjects\appLibrary\jsonLibrary\app\src\releaseUnitTest\kotlin">
         <compilerSettings>
           <option name="additionalArguments" value="-Xallow-no-source-files" />
         </compilerSettings>
