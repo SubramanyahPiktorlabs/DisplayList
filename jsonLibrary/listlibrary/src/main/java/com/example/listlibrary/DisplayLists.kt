@@ -12,10 +12,13 @@ import okhttp3.*
 import org.w3c.dom.Text
 import java.io.IOException
 
-public class DisplayLists(){
+
+
+public class DisplayLists:AppCompatActivity(){
     public fun list(){
         val url = "https://api.myjson.com/bins/18r9ww"
-        println("Hello:"+url)
+//        println("Hello:"+url)
+        Toast.makeText(this, url, Toast.LENGTH_LONG).show()
 //        showToast(url,Toast.LENGTH_LONG)
 //        val request = Request.Builder().url(url).build()
 //
