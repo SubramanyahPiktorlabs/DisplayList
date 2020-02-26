@@ -11,6 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92698e4d-0d11-4b0f-8594-bb3fca485d3d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/listlibrary/src/main/java/com/example/listlibrary/DisplayLists.kt" beforeDir="false" afterPath="$PROJECT_DIR$/listlibrary/src/main/java/com/example/listlibrary/DisplayLists.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -93,8 +94,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/listlibrary/src/main/java/com/example/listlibrary/DisplayLists.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="221">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
               <folding>
                 <element signature="e#33#360#0" expanded="true" />
               </folding>
@@ -540,8 +541,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/listlibrary/src/main/java/com/example/listlibrary/DisplayLists.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
           <folding>
             <element signature="e#33#360#0" expanded="true" />
           </folding>
