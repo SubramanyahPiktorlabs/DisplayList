@@ -13,12 +13,20 @@ import org.w3c.dom.Text
 import java.io.IOException
 
 
+public class DisplayLists {
 
-public class DisplayLists:AppCompatActivity(){
-    public fun list(){
-        val url = "https://api.myjson.com/bins/18r9ww"
-//        println("Hello:"+url)
-        Toast.makeText(this, url, Toast.LENGTH_LONG).show()
+    public fun list(c: Context, message: String) {
+
+        Toast.makeText(c, message, Toast.LENGTH_SHORT).show()
+
+    }
+}
+
+//public class DisplayLists:AppCompatActivity(){
+//     public fun list(){
+//        val url = "https://api.myjson.com/bins/18r9ww"
+////        println("Hello:"+url)
+//        Toast.makeText(this, url, Toast.LENGTH_LONG).show()
 //        showToast(url,Toast.LENGTH_LONG)
 //        val request = Request.Builder().url(url).build()
 //
@@ -39,7 +47,7 @@ public class DisplayLists:AppCompatActivity(){
 //                println("Failed to execute")
 //            }
 //        })
-    }
-}
-class HomeFeed(val hobbies: List<Hobby>)
-class Hobby (val hobby: String)
+//    }
+//}
+//class HomeFeed(val hobbies: List<Hobby>)
+//class Hobby (val hobby: String)
