@@ -50,8 +50,9 @@ import java.io.IOException
 
 class DisplayList : AppCompatActivity() {
 
-    public fun list(c: Context, message: String){
-        Toast.makeText(c, message, Toast.LENGTH_LONG).show()
+    public fun list(c: Context, message: String):String{
+        return message
+//        Toast.makeText(c, message, Toast.LENGTH_LONG).show()
 //        onCreate(savedInstanceState = null);
     }
 //    override public fun onCreate(savedInstanceState: Bundle?) {
