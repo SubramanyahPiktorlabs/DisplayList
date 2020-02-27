@@ -51,10 +51,25 @@ import java.io.IOException
 class DisplayList : AppCompatActivity() {
 
     public fun list(c: Context, message: String):String{
-        return message
+        var listdata:String?=""
+        val url = "https://api.myjson.com/bins/18r9ww"
+        val request = Request.Builder().url(url).build()
+        val client = OkHttpClient()
+        client.newCall(request).enqueue(object: Callback{
+            override fun onResponse(call: Call, response: Response) {
+                val body = response?.body?.string()
+                listdata=body;
+            }
+            override fun onFailure(call: Call, e: IOException) {
+                listdata="failed to fetch"
+                println("Failed to fetch")
+            }
+        })
+        return listdata!!
 //        Toast.makeText(c, message, Toast.LENGTH_LONG).show()
 //        onCreate(savedInstanceState = null);
     }
+
 //    override public fun onCreate(savedInstanceState: Bundle?) {
 //        super.onCreate(savedInstanceState)
 //        setContentView(R.layout.activity_main)
