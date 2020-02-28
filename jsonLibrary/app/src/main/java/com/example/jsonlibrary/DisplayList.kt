@@ -66,7 +66,7 @@ class DisplayList : AppCompatActivity() {
 //                listJSON=item.toString()
                 val gson = GsonBuilder().create()
                 val homeFeed = gson.fromJson(body,HomeFeed::class.java)
-                listJSON=homeFeed.toString()
+                listJSON=homeFeed.hobbies.toString()
 //                listJSON=body
             }
             override fun onFailure(call: Call, e: IOException) {
