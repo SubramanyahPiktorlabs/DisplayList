@@ -59,8 +59,15 @@ class DisplayList : AppCompatActivity() {
         client.newCall(request).enqueue(object: Callback{
             override fun onResponse(call: Call, response: Response) {
                 val body = response?.body?.string()
-//                return body
-                listJSON=body
+//                var item:MutableList<String> = ArrayList()
+//                for(i in 0 until body!!.length){
+//                    item.add(body.getJSONObject(i))
+//                }
+//                listJSON=item.toString()
+                val gson = GsonBuilder().create()
+                val homeFeed = gson.fromJson(body,HomeFeed::class.java)
+                listJSON=homeFeed.toString()
+//                listJSON=body
             }
             override fun onFailure(call: Call, e: IOException) {
                 listJSON="failed to fetch"
@@ -68,9 +75,8 @@ class DisplayList : AppCompatActivity() {
 //                return "failed"
             }
         })
-//        println(listJSON)
-
-        return words.toString()
+//        return words.toString()
+        return listJSON.toString()
 //        Toast.makeText(c, message, Toast.LENGTH_LONG).show()
 //        onCreate(savedInstanceState = null);
     }
