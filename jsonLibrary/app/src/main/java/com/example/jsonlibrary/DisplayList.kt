@@ -50,9 +50,9 @@ import java.io.IOException
 
 class DisplayList : AppCompatActivity() {
 
-    public fun list(c: Context, message: String):String{
+    public fun list(message: String):String{
         val words= listOf("pen","book","Item","money","xyz")
-        var listJSON:String?=null
+        var listJSON:List<Hobby>
         val url = "https://api.myjson.com/bins/18r9ww"
         val request = Request.Builder().url(url).build()
         val client = OkHttpClient()
@@ -66,17 +66,18 @@ class DisplayList : AppCompatActivity() {
 //                listJSON=item.toString()
                 val gson = GsonBuilder().create()
                 val homeFeed = gson.fromJson(body,HomeFeed::class.java)
-                listJSON=homeFeed.hobbies.toString()
+                listJSON= homeFeed.hobbies
 //                listJSON=body
             }
             override fun onFailure(call: Call, e: IOException) {
-                listJSON="failed to fetch"
-//                println("Failed to fetch")
+
+//                listJSON="failed to fetch"
+                println("Failed to fetch")
 //                return "failed"
             }
         })
-//        return words.toString()
-        return listJSON.toString()
+        return words.toString()
+//        return listJSON.toString()
 //        Toast.makeText(c, message, Toast.LENGTH_LONG).show()
 //        onCreate(savedInstanceState = null);
     }
