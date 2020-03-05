@@ -52,7 +52,8 @@ class DisplayList : AppCompatActivity() {
 
     public fun list(message: String):String{
         val words= listOf("pen","book","Item","money","xyz")
-        var listJSON:List<Hobby>
+//        var listJSON:List<Hobby>
+        var listJSON:String;
         val url = "https://api.myjson.com/bins/18r9ww"
         val request = Request.Builder().url(url).build()
         val client = OkHttpClient()
@@ -64,10 +65,10 @@ class DisplayList : AppCompatActivity() {
 //                    item.add(body.getJSONObject(i))
 //                }
 //                listJSON=item.toString()
-                val gson = GsonBuilder().create()
-                val homeFeed = gson.fromJson(body,HomeFeed::class.java)
-                listJSON= homeFeed.hobbies
-//                listJSON=body
+//                val gson = GsonBuilder().create()
+//                val homeFeed = gson.fromJson(body,HomeFeed::class.java)
+//                listJSON= homeFeed.hobbies
+                listJSON=body.toString()
             }
             override fun onFailure(call: Call, e: IOException) {
 
